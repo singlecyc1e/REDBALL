@@ -69,11 +69,11 @@ public class rotation : MonoBehaviour {
         }
         if (left == true)
         {
-            transform.Rotate(0, 1, 0);
+            transform.Rotate(0, 0, 1);
         }
         if (right == true)
         {
-            transform.Rotate(0, -1, 0);
+            transform.Rotate(0, 0, -1);
         }
     }
 }
