@@ -1,20 +1,23 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Switch : MonoBehaviour {
+    public string nextscene;
 
-void OnTriggerEnter (Collider other)
-{
-    Debug.Log("switch on");
-}
-    void OnTriggerStay(Collider other)
+
+    void OnTriggerEnter (Collider other)
     {
-        Debug.Log("stay in");
+
+                SceneManager.LoadScene(nextscene);
+
     }
+
+
 
     private void OnTriggerExit(Collider other)
     {
-        Debug.Log("exit");    
+ 
     }
 }
